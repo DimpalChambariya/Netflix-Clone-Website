@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+}
+
+.small{
+    width: 100%;
+    object-fit: contain;
+    max-height: 215px;
+    margin-right: 10px;
+    transition: transform 450ms;
+    
+}
+
+.posters{
+    display:flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding:20px;
+}
+
+.small:hover{
+    transform:scale(1.08);
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+.large{
+    max-height: 280px;
+    max-width: 200px;
+    
+}
+
+.large:hover{
+    transform: scale(1.09);
+}
+
+.row{
+    color: white;
+    margin-left: 20px;
+}
+
+.header{
+    background-image: url("images/money.jpg");
+    background-size: cover;
+    background-position: center center;
+    color:#fff;
+    object-fit: contain;
+    height: 448px;
+
+}
+
+
+
+.top{
+    margin-left: 30px;
+    padding-top: 250px;
+    height: 190px;
+}
+
+.main{
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+.desc{
+    width:45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    max-width: 360px;
+    height:180px;
+    
+}
+
+.buttons{
+    cursor:pointer;
+    color:#111;
+    outline: none;
+    border:none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    
+}
+
+.buttons:hover{
+    color:#fff;
+    background-color: #111;
+    transition: all 0.2ss;
+}
+
+.bottom{
+    margin-top: 145px;
+    height:7.4rem;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111);
+}
+
+.logo{
+    
+    width:120px;
+    object-fit: contain;
+}
+
+.av{
+    width:50px;
+    object-fit: contain;
+}
+
+.top_main{
+    position: fixed;
+    top:0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.logout{
+    object-fit: contain;
+    margin-left: 60px;
+    width:120px;
+    height:40px;
+    display: inline-block;
+    background: red;
+    color:white;
+    padding:0.5rem 1.2rem;
+    font-size: 1.1rem;
+    text-align: center;
+    border:none;
+    cursor:pointer;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+    outline: none;
+    font-weight: bold;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.25);
+}
+
+.logout:hover{
+    opacity: 0.8;
+}
+
+
+.footer{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding-left: 4%;
+    display: flex;
+    gap: 1rem;
+  }
+  .left-footer{
+    width: 59%;
+  }
+  .footer-links{
+    margin-top: 10px;
+    display: flex;
+    list-style-type: none;
+  }
+  .footer-links a{
+    text-decoration: none;
+    margin-right: 20px;
+    text-transform: Capitalise;
+    color: white;
+    opacity: 0.9;
+    font-size: 15px;
+  }
+  .footer-links1{
+    margin-top: 10px;
+    display: flex;
+    list-style-type: none;
+  }
+  .footer-links1 a{
+    text-decoration: none;
+    margin-right: 20px;
+    text-transform: Capitalise;
+    color: white;
+    opacity: 0.9;
+    font-size: 15px;
+  }
+  .footer-items a:hover{
+    color:#1f80e0;
+  }
+  .footer-items1 a:hover{
+    color:#1f80e0;
+  }
+  .copyright{
+    width: 82%;
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 1rem;
+    line-height: 170%;
+  }
+  
+  .right-footer{
+    text-align: right;
+    width: 35%;
+  
+  }
+  
+  .right-footer .footer-links{
+    margin-left: auto;
+    margin-right: 0;
+    justify-content: flex-end;
+  }
+  
+  .about-me{
+    width: 100%;
+    text-align: justify;
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 1rem;
+    line-height: 170%;
+  }
